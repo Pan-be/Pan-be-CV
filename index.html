@@ -111,6 +111,12 @@
 
                     </li>
                     <li>
+                        <a href="https://wallet-pan-be.netlify.app" class="projects-link">
+                            Wallet with two color themes (JS)
+                        </a>
+
+                    </li>
+                    <li>
                         <a href="https://czasoodliczator-pan-be.netlify.app" class="projects-link">
                             Countdown Timer (JS)
                         </a>
@@ -198,6 +204,13 @@
             </section>
         </div>
     </div>
+    <script>
+        const projArr = document.querySelectorAll('.projects-link');
+        console.log(projArr);
+        projArr.forEach(link => {
+            link.setAttribute('target', '_blank')
+        });
+    </script>
 </body>
 
 </html>
