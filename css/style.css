@@ -261,6 +261,9 @@ body {
 		width: 330px;
 		position: fixed;
 	}
+	.contacts-title {
+		margin-top: 400px;
+	}
 	.widget {
 		width: 100vw;
 	}
