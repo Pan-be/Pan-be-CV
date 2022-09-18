@@ -240,7 +240,7 @@ body {
 		padding: 5px;
 	}
 	.container {
-		width: 110vw;
+		width: 100vw;
 		flex-direction: column;
 	}
 	.right-side {
@@ -256,6 +256,10 @@ body {
 	.left-side {
 		width: auto;
 		padding: auto;
+	}
+	.photo {
+		width: 330px;
+		position: fixed;
 	}
 	.widget {
 		width: 100vw;
