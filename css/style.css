@@ -237,7 +237,9 @@ body {
 	body {
 		background-color: black;
 		padding: 5px;
+		max-width: 100vw;
 	}
+
 	.container {
 		width: 100vw;
 		flex-direction: column;
@@ -262,8 +264,5 @@ body {
 	}
 	.contacts-title {
 		margin-top: 400px;
-	}
-	.widget {
-		width: 100vw;
 	}
 }
