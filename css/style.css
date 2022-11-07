@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+html {
+	box-sizing: border-box;
+}
+
 :root {
 	--neon-green-color: #39ff14;
 	--kelly-green-color: #4cbb17;
@@ -11,6 +15,8 @@
 	--blue-color: #5ce1e6;
 }
 body {
+	margin: 0;
+	min-height: 100vh;
 	background-color: #f5f7fa;
 	padding: 40px;
 	font-family: "Montserrat", sans-serif;
@@ -157,7 +163,7 @@ body {
 
 .widget {
 	margin-top: 80px;
-	width: 100%;
+	width: 80%;
 }
 
 .photo,
@@ -235,8 +241,10 @@ body {
 
 @media (max-width: 768px) {
 	body {
+		box-sizing: border-box;
 		background-color: black;
-		padding: 5px;
+		/* padding-top: 5px; */
+		padding: 0;
 		max-width: 100vw;
 	}
 
