@@ -74,6 +74,10 @@ body {
 	padding: 40px;
 }
 
+i {
+	margin-right: 5px;
+}
+
 .bio,
 .projects,
 .jobs,
