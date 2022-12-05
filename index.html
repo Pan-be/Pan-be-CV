@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ce082c374.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,12 +20,24 @@
                 <h2 class="contacts-title">Contacts</h2>
                 <ul class="contacts-list">
                     <li class="contacts-item">
-                        Phone:
+                        <i class="fa-solid fa-phone"></i>
                         <a href="tel:+48884960930" class="contacts-link">+48 884 960 930</a>
                     </li>
                     <li class="contacts-item">
-                        E-mail:
-                        <a href="mailto:konradbieniek@gmail.com" class="contacts-link">konradbieniek@gmail.com</a>
+                        <i class="fa-solid fa-envelope"></i> <a href="mailto:konradbieniek@gmail.com"
+                            class="contacts-link">konradbieniek@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <i class="fa-brands fa-linkedin"></i> <a href="mailto:konradbieniek@gmail.com"
+                            class="contacts-link">konradbieniek@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <i class="fa-brands fa-github"></i> <a href="mailto:konradbieniek@gmail.com"
+                            class="contacts-link">konradbieniek@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <i class="fa-solid fa-house"></i><a href="https://goo.gl/maps/8Ah85kPUxeXEXzzZ6"
+                            class="contacts-link">Bielsko-Biała</a>
                     </li>
                 </ul>
             </section>
@@ -213,13 +226,7 @@
             </section>
         </div>
     </div>
-    <script>
-        const projArr = document.querySelectorAll('.projects-link');
-        console.log(projArr);
-        projArr.forEach(link => {
-            link.setAttribute('target', '_blank')
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 

@@ -14,15 +14,23 @@ html {
 	--red-color: rgb(255, 49, 49);
 	--blue-color: #5ce1e6;
 }
-body {
+/* body {
 	margin: 0;
 	min-height: 100vh;
 	background-color: #f5f7fa;
 	padding: 40px;
 	font-family: "Montserrat", sans-serif;
+} */
+
+body {
+	background-color: #f5f7fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
-.container {
+/* .container {
 	width: 1100px;
 	display: flex;
 	flex-direction: row;
@@ -32,6 +40,38 @@ body {
 	background-color: #fff;
 	box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 	border-radius: 10px;
+} */
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 100px;
+	/* width: 1100px;
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	/* margin-right: auto; */
+
+	background-color: #fff;
+	margin: 50px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+
+.container .left-side {
+	position: relative;
+	background-color: #2e3238;
+	color: #fff;
+	border-radius: 10px;
+	padding: 40px;
+}
+
+.container .right-side {
+	position: relative;
+	background-color: #fff;
+	padding: 40px;
 }
 
 .bio,
@@ -41,13 +81,13 @@ body {
 	margin-bottom: 60px;
 }
 
-.right-side {
+/* .right-side {
 	width: 60%;
 	padding-left: 80px;
 	padding-right: 200px;
 	padding-top: 68px;
 	padding-bottom: 68px;
-}
+} */
 
 .bio-title {
 	font-size: 45px;
@@ -125,12 +165,12 @@ body {
 
 /* ========= left-side ========= */
 
-.left-side {
+/* .left-side {
 	width: 30%;
 	background-color: #2e3238;
 	color: #fff;
 	border-radius: 10px;
-}
+} */
 
 .skills-title {
 	font-size: 22px;
