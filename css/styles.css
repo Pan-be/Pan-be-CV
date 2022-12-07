@@ -112,7 +112,17 @@ body {
 .contacts ul li {
 	position: relative;
 	list-style: none;
+	list-style-position: inside;
 	margin: 10px 0;
+}
+.contacts .contacts-list .contacts-item::before {
+	content: none;
+}
+.contacts ul li::before {
+	content: "\2022";
+	margin-right: 8px;
+	color: var(--blue-color);
+	font-size: 18px;
 }
 
 .contacts ul li .icon {
@@ -310,6 +320,10 @@ p {
 
 	.bio-right {
 		display: none;
+	}
+
+	.personals .img-box {
+		-webkit-border-radius: 50%;
 	}
 }
 
