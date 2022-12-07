@@ -323,7 +323,8 @@ p {
 	}
 
 	.personals .img-box {
-		-webkit-border-radius: 50%;
+		outline: none;
+		border: 1px solid var(--blue-color);
 	}
 }
 
