@@ -56,8 +56,8 @@ body {
 
 .personals .img-box {
 	position: relative;
-	width: 370px;
-	height: 370px;
+	width: 250px;
+	height: 250px;
 	overflow: hidden;
 	border-radius: 50%;
 	margin: 10px;
@@ -72,6 +72,10 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.img-box:hover {
+	animation: pulse 1s;
 }
 
 .personals h2 {
@@ -130,6 +134,13 @@ body {
 
 .widget-box {
 	margin: 60px 0 20px 0;
+	height: 60px;
+}
+
+.widget-box .widget {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .widget-link {
@@ -160,4 +171,154 @@ body {
 	position: relative;
 	background-color: #fff;
 	padding: 40px;
+}
+
+.about {
+	margin-bottom: 50px;
+}
+
+.about:last-child {
+	margin-bottom: 0;
+}
+
+.bio-title {
+	font-size: 35px;
+	line-height: 2;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+.bio-occupation {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #828282;
+	font-weight: bold;
+}
+
+.title2 {
+	color: #2a2a2a;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+p {
+	color: #595959;
+	text-align: justify;
+}
+
+.projects ul {
+	list-style: none;
+}
+
+.projects i {
+	color: var(--blue-color);
+}
+
+.projects-link {
+	cursor: pointer;
+	color: #2a2a2a;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.projects-link:hover {
+	color: var(--blue-color);
+}
+
+.about .box {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.about .box .year-company {
+	min-width: 200px;
+}
+
+.about .box .year-company h5 {
+	text-transform: uppercase;
+	color: #828282;
+	font-weight: 600;
+}
+
+.about .box .text h4 {
+	text-transform: uppercase;
+	color: var(--blue-color);
+	font-size: 16px;
+}
+
+.about .box .text h4 i {
+	padding: 0 10px;
+}
+
+.about .dots {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about .dots-hover {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+
+.dots i {
+	margin: 10px 0;
+}
+
+.more-exp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.more-exp p {
+	font-style: italic;
+}
+
+.education-title {
+	color: #2a2a2a;
+	font-size: 22px;
+	line-height: 1.091;
+}
+
+.education-degree {
+	text-transform: uppercase;
+	color: #828282;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.education-time {
+	color: #828282;
+	font-size: 12px;
+	line-height: 2;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.personals h2 {
+		display: block;
+	}
+
+	.bio-right {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.about .box {
+		flex-direction: column;
+	}
+
+	.about .box .year-company {
+		margin-bottom: 5px;
+	}
 }
