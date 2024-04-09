@@ -115,9 +115,11 @@ body {
 	list-style-position: inside;
 	margin: 10px 0;
 }
+
 .contacts .contacts-list .contacts-item::before {
 	content: none;
 }
+
 .contacts ul li::before {
 	content: "\2022";
 	margin-right: 8px;
@@ -307,6 +309,19 @@ p {
 	font-size: 12px;
 	line-height: 2;
 }
+
+.read_more {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#pos1_description,
+#pos2_description {
+	transition: opacity 0.4s ease;
+	/* Dostosuj czas trwania i funkcję animacji według potrzeb */
+}
+
 
 @media (max-width: 1000px) {
 	.container {
